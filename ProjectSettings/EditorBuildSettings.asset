@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2c98b76346c94fa49a79d9ba45762a2e
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 0c5d4f536845e2b4497c9825a8860c71
+  - enabled: 1
+    path: Assets/Scenes/GymNew.unity
+    guid: 6409dfda866ad5b4aa522528771d0ed5
+  - enabled: 1
+    path: Assets/Scenes/NewLvlSelect.unity
+    guid: 18ad413b323ab544eb85131c2f06e575
+  - enabled: 1
+    path: Assets/Scenes/MountNew.unity
+    guid: cb98113a832e59249a795f4aa112c5b6
+  - enabled: 1
+    path: Assets/Scenes/Gallery.unity
+    guid: 722d8d2c383c5bd41b43b38ad21a4ecb
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: b3861d8caacaef24a923d09482b33fa3
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: 9e6b8a2312a1b574e9a043bfb29801ed
+  - enabled: 1
+    path: Assets/Scenes/Ship.unity
+    guid: 9742ffa6d4361284b8a4106caba613cc
+  - enabled: 1
+    path: Assets/Scenes/Customization.unity
+    guid: 61bc299e7a06f174a9308cf6001ed8af
+  - enabled: 1
+    path: Assets/Scenes/Thailand.unity
+    guid: 59d5e3fd65592484e9d6a19714054f7b
+  - enabled: 1
+    path: Assets/Scenes/Haunted.unity
+    guid: 93a1a15aeed83a748bd0839e0d32cfb6
+  - enabled: 1
+    path: Assets/Scenes/Space.unity
+    guid: 3b6d52aff12c5ba49b5f9c6f98cc6997
