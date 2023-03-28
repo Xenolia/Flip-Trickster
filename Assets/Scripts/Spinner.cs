@@ -272,7 +272,7 @@ public class Spinner : MonoBehaviour, IPointerDownHandler, IEventSystemHandler
 	{
 		if (this.hatCosts[this.hatNum] > Currency.coinAmount)
 		{
-			GameObject.Find("MAIN").GetComponent<Customization>().OpenShop();
+			Debug.LogError("Not Enoug Money");
 			return;
 		}
 		Currency.coinAmount = GameState.Instance.RemoveCoins(this.hatCosts[this.hatNum]);

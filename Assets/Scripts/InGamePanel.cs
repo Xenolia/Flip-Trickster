@@ -9,9 +9,11 @@ public class InGamePanel : MonoBehaviour
 {
 	private void Start()
 	{
-		 
+		/* 
 		Button[] componentsInChildren = base.GetComponentsInChildren<Button>();
-		componentsInChildren[2].onClick.AddListener(new UnityAction(this.ShowHomeModal));
+		componentsInChildren[2].onClick.AddListener(new UnityAction(ShowHomeModal));
+		*/
+
 	}
 
 	private void Update()
