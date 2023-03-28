@@ -6,6 +6,7 @@ public class AspectFixer : MonoBehaviour
 {
 	private void Start()
 	{
+		/*
 		if (LvlModels.onIpad)
 		{
 			return;
@@ -17,6 +18,7 @@ public class AspectFixer : MonoBehaviour
 		this.posFixer = ((!(base.name == "SkipStuff")) ? this.posFixer : GameObject.Find("SkipPos").transform);
 		base.transform.position = ((base.transform.localPosition.x <= 0f) ? (this.posFixer.position + base.transform.right * num2) : (this.posFixer.position + base.transform.right * -num2));
 		MonoBehaviour.print(base.transform.localPosition);
+		*/
 	}
 
 	private void Update()

@@ -36,6 +36,9 @@ public class InGamePanel : MonoBehaviour
 		//{
 		//	AppLovinCrossPromo.Instance().HideMRec();
 		//}
+
+
+		Debug.LogError(" restart button call intersitial here  ");
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 

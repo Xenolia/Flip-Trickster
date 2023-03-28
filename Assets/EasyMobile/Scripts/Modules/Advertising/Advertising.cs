@@ -19,7 +19,7 @@ namespace EasyMobile
         private static AudienceNetworkClientImpl sAudienceNetworkClient;
         private static HeyzapClientImpl sHeyzapClient;
         private static MoPubClientImpl sMoPubClient;
-        private static IronSourceClientImpl sIronSourceClient;
+        //private static IronSourceClientImpl sIronSourceClient;
         private static TapjoyClientImpl sTapjoyClient;
         private static UnityAdsClientImpl sUnityAdsClient;
 
@@ -181,7 +181,7 @@ namespace EasyMobile
         /// Gets the ironSource client.
         /// </summary>
         /// <value>The iron source client.</value>
-        public static IronSourceClientImpl IronSourceClient
+       /* public static IronSourceClientImpl IronSourceClient
         {
             get
             {
@@ -189,7 +189,7 @@ namespace EasyMobile
                     sIronSourceClient = SetupAdClient(AdNetwork.IronSource) as IronSourceClientImpl;
                 return sIronSourceClient;
             }
-        }
+        }*/
 
         /// <summary>
         /// Gets the Tapjoy client.
@@ -1186,8 +1186,8 @@ namespace EasyMobile
                     return AudienceNetworkClientImpl.CreateClient();
                 case AdNetwork.Heyzap:
                     return HeyzapClientImpl.CreateClient();
-                case AdNetwork.IronSource:
-                    return IronSourceClientImpl.CreateClient();
+                //case AdNetwork.IronSource:
+                    //return IronSourceClientImpl.CreateClient();
                 case AdNetwork.MoPub:
                     return MoPubClientImpl.CreateClient();
                 case AdNetwork.TapJoy:
@@ -1249,8 +1249,8 @@ namespace EasyMobile
                     return HeyzapClient;
                 case AdNetwork.MoPub:
                     return MoPubClient;
-                case AdNetwork.IronSource:
-                    return IronSourceClient;
+               //case AdNetwork.IronSource:
+                    //return IronSourceClient;
                 case AdNetwork.UnityAds:
                     return UnityAdsClient;
                 case AdNetwork.TapJoy:

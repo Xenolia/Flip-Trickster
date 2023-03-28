@@ -372,6 +372,7 @@ public class Main : MonoBehaviour
 
 	public void EnableButtons()
 	{
+
 	}
 
 	public void EnableVariations()

@@ -5,7 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-	private void Start()
+
+	[SerializeField] AdManager _adManager;
+
+
+    private void Awake()
+    {
+		_adManager.Init();
+    }
+
+    private void Start()
 	{
 		Application.targetFrameRate = 60;
 		QualitySettings.antiAliasing = 0;
@@ -29,5 +38,6 @@ public class MainMenu : MonoBehaviour
 		{
 			SceneManager.LoadScene("NewLvlSelect");
 		}
+		_adManager.InterstatialAdManager.ShowAd();
 	}
 }
