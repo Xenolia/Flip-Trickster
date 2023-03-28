@@ -107,8 +107,7 @@ public class Spinwheel : MonoBehaviour
 
 	public void Awesome()
 	{
-		LionAdManager.Instance.MarkInterstitialShown();
-		if (SceneManager.GetActiveScene().name == "NewLvlSelect")
+ 		if (SceneManager.GetActiveScene().name == "NewLvlSelect")
 		{
 			UnityEngine.Object.Destroy(base.gameObject);
 		}

@@ -10,8 +10,7 @@ public class LevelMain : MonoBehaviour
 	{
 		Spinner.activeHatNum = PlayerPrefs.GetInt("ActiveHatNum", -1);
 		this.soundText.text = ((AudioListener.volume != 1f) ? "Sound: Off" : "Sound: On");
-		LionAdManager.Instance.HideBanner();
-		LevelMain.canSwipe = true;
+ 		LevelMain.canSwipe = true;
 		if (LevelMain.counter < 4)
 		{
 			LevelMain.counter++;

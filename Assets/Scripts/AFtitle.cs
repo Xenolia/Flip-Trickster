@@ -11,12 +11,10 @@ public class AFtitle : MonoBehaviour
 		UnityEngine.Debug.Log("Staring AFTtile..");
 		Skipper.skipAmount = PlayerPrefs.GetInt("Skips", 0);
 		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-		AFtitle.noAds = GameState.Instance.HasAdsDisabled();
-		this.targetPlayTime = PlayerPrefs.GetFloat("TargetTime", 300f);
+ 		this.targetPlayTime = PlayerPrefs.GetFloat("TargetTime", 300f);
 		this.playTime = PlayerPrefs.GetFloat("PlayTime", 0f);
 		AFtitle.rvmodalTimer = 90f;
-		base.StartCoroutine(this.SetUpMopub());
-	}
+ 	}
 
 	private void FixedUpdate()
 	{
@@ -89,31 +87,7 @@ public class AFtitle : MonoBehaviour
 		//	GameObject.Find("MAIN").GetComponent<TitleMain>().GDPR();
 		//	yield return new WaitUntil(() => TitleMain.gdprFinished);
 		//}
-		 if (PlayerPrefs.GetInt("GDPRDone", 0) == 0)
-		{
-			TitleMain.adConsent = true;
-			TitleMain.analyticsConsent = true;
-			PlayerPrefs.SetInt("GDPRDone", 1);
-			PlayerPrefs.SetInt("Ads", 1);
-			PlayerPrefs.SetInt("Analytics", 1);
-		}
-		else
-		{
-			TitleMain.adConsent = (PlayerPrefs.GetInt("Ads") == 1);
-			TitleMain.analyticsConsent = (PlayerPrefs.GetInt("Analytics") == 1);
-		}
-		LionAdManager.Instance.Initialize();
-		if (!AFtitle.noAds)
-		{
-			//AppLovinCrossPromo.Instance().ShowMRec(3f, 56f, 38f, 50f, -15f);
-		}
-		if (TitleMain.analyticsConsent)
-		{
-			//AppsFlyer.setAppsFlyerKey("7yZY6gN88m48knvBDVDCyB");
-			//AppsFlyer.setAppID("com.revolverolver.fliptrickster");
-			//AppsFlyer.init("7yZY6gN88m48knvBDVDCyB", "AppsFlyerTrackerCallbacks");
-			this.CheckRetention();
-		}
+		 
 		yield break;
 	}
 

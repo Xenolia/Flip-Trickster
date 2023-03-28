@@ -9,8 +9,7 @@ public class InGamePanel : MonoBehaviour
 {
 	private void Start()
 	{
-		bool interstitialsDisabled = LvlBtnHandler.activeStage > 0 && LvlBtnHandler.activeLevel > 0 && StageModel.IsFirstStage(LvlBtnHandler.activeStage) && !GameState.Instance.HasLevelAccess(StageModel.GetSecondStageId(), 1) && !StageModel.IsLastLevel();
-		LionAdManager.Instance.SetInterstitialsDisabled(interstitialsDisabled);
+		 
 		Button[] componentsInChildren = base.GetComponentsInChildren<Button>();
 		componentsInChildren[2].onClick.AddListener(new UnityAction(this.ShowHomeModal));
 	}
@@ -27,11 +26,7 @@ public class InGamePanel : MonoBehaviour
 	public void Restart()
 	{
 		SubLevel.attempt++;
-		if (LionAdManager.Instance.IsTimeToShowIntersitial() && !AFtitle.noAds)
-		{
-			AFtitle.watchedReward = false;
-			LionAdManager.Instance.MaybeShowInterstitial();
-		}
+		 
 		//if (AppLovinCrossPromo.Instance() != null && !AFtitle.noAds)
 		//{
 		//	AppLovinCrossPromo.Instance().HideMRec();
@@ -54,11 +49,8 @@ public class InGamePanel : MonoBehaviour
 
 	public void Menu()
 	{
-		if (SceneManager.GetActiveScene().name != "Customization" && !AFtitle.noAds && LionAdManager.Instance.IsTimeToShowIntersitial() && LvlBtnHandler.activeStage != 0)
-		{
-			AFtitle.watchedReward = false;
-			LionAdManager.Instance.MaybeShowInterstitial();
-		}
+		 
+		 
 		//if (AppLovinCrossPromo.Instance() != null)
 		//{
 		//	AppLovinCrossPromo.Instance().HideMRec();

@@ -22,19 +22,7 @@ public class Main : MonoBehaviour
 		{
 		}
 		this.SpawnHat();
-		if (!Main.hasCreatedBanner && !AFtitle.noAds)
-		{
-			LionAdManager.Instance.CreateBanner();
-			Main.hasCreatedBanner = true;
-			if (TitleMain.analyticsConsent)
-			{
-				//AppsFlyer.trackEvent("create_banner", string.Empty);
-			}
-		}
-		if (!AFtitle.noAds)
-		{
-			LionAdManager.Instance.ShowBanner();
-		}
+ 
 	}
 
 	private void OnEnable()
@@ -181,14 +169,7 @@ public class Main : MonoBehaviour
 		{
 			//AppsFlyer.trackEvent("doublecoins_click", string.Empty);
 		}
-		if (LionAdManager.Instance.HasRewarded())
-		{
-			IAPShop.freePrize = false;
-			IAPShop.free25 = false;
-			IAPShop.doubleCoins = true;
-			LionAdManager.Instance.MaybeShowRewarded();
-			return;
-		}
+		 
 		Transform transform = (!(SceneManager.GetActiveScene().name == "NewLvlSelect")) ? GameObject.Find("NewCanvas02").transform : base.transform.parent;
 		if (Application.internetReachability == NetworkReachability.NotReachable)
 		{
@@ -224,14 +205,7 @@ public class Main : MonoBehaviour
 			PlayerPrefs.SetInt("FirstSpin", 1);
 			return;
 		}
-		if (LionAdManager.Instance.HasRewarded())
-		{
-			IAPShop.freePrize = true;
-			IAPShop.free25 = false;
-			IAPShop.doubleCoins = false;
-			LionAdManager.Instance.MaybeShowRewarded();
-			return;
-		}
+		 
 		Transform transform = (!(SceneManager.GetActiveScene().name == "NewLvlSelect")) ? GameObject.Find("NewCanvas02").transform : base.transform.parent;
 		if (Application.internetReachability == NetworkReachability.NotReachable)
 		{
@@ -317,11 +291,7 @@ public class Main : MonoBehaviour
 
 	public void AfterModal()
 	{
-		if (LionAdManager.Instance.IsTimeToShowIntersitial() && !AFtitle.noAds)
-		{
-			AFtitle.watchedReward = false;
-			LionAdManager.Instance.MaybeShowInterstitial();
-		}
+		 
 		Main.skippedLevel = false;
 		if (StageModel.IsLastLevel())
 		{
@@ -338,11 +308,7 @@ public class Main : MonoBehaviour
 
 	public void PreviousLevel()
 	{
-		if (LionAdManager.Instance.IsTimeToShowIntersitial() && !AFtitle.noAds)
-		{
-			AFtitle.watchedReward = false;
-			LionAdManager.Instance.MaybeShowInterstitial();
-		}
+		 
 		//if (AppLovinCrossPromo.Instance() != null)
 		//{
 		//	AppLovinCrossPromo.Instance().HideMRec();
