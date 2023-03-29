@@ -17,7 +17,7 @@ public class ButtonInterstitialController : MonoBehaviour
     public void ShowInterstitialMenuPlayButton()
     {
         _adManager.InterstatialAdManager.ShowAd();
-        StartCoroutine(ResetInterstitial());
+       
 
     }
 
