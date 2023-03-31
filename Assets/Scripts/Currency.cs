@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
+	
+
 	private void Start()
 	{
 		Currency.coinAmount = GameState.Instance.GetCoins();
@@ -14,6 +16,9 @@ public class Currency : MonoBehaviour
 	private void Update()
 	{
 	}
+
+	
+
 
 	public static int coinAmount;
 

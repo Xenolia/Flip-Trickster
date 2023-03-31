@@ -278,11 +278,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8902134017400952514, guid: 61d9a086d32bcf0419b058198efb626d,
         type: 3}
+      propertyPath: coinText
+      value: 
+      objectReference: {fileID: 1789844185737539359}
+    - target: {fileID: 8902134017400952514, guid: 61d9a086d32bcf0419b058198efb626d,
+        type: 3}
       propertyPath: _adManager
       value: 
       objectReference: {fileID: 680209426}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d9a086d32bcf0419b058198efb626d, type: 3}
+--- !u!114 &1061399258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8902134017400952514, guid: 61d9a086d32bcf0419b058198efb626d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1061399257}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380adedaa972f994e8cf10aaef71d5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1627306472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16172,7 +16189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1789844185737536309
 GameObject:
   m_ObjectHideFlags: 0
@@ -68751,7 +68768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -268, y: -49}
+  m_AnchoredPosition: {x: -186.69, y: -49}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1789844185737539155
@@ -71163,8 +71180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 89.4, y: 0}
+  m_SizeDelta: {x: -178.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1789844185737539269
 RectTransform:
@@ -82056,7 +82073,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1789844185737539542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1789844185737539851}
+        m_TargetAssemblyTypeName: InGamePanel, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789844185737539542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83528,6 +83557,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1789844185737539717}
         m_TargetAssemblyTypeName: 
         m_MethodName: NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1061399258}
+        m_TargetAssemblyTypeName: ButtonInterstitialController, Assembly-CSharp
+        m_MethodName: ShowInterstitialMenuPlayButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -88814,6 +88855,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1061399258}
+        m_TargetAssemblyTypeName: ButtonInterstitialController, Assembly-CSharp
+        m_MethodName: ShowInterstitialMenuPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789844185737539772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90404,6 +90457,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1061399258}
+        m_TargetAssemblyTypeName: ButtonInterstitialController, Assembly-CSharp
+        m_MethodName: ShowInterstitialMenuPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789844185737539828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91201,6 +91266,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1061399258}
+        m_TargetAssemblyTypeName: ButtonInterstitialController, Assembly-CSharp
+        m_MethodName: ShowInterstitialMenuPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789844185737539856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91360,6 +91437,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1061399258}
+        m_TargetAssemblyTypeName: ButtonInterstitialController, Assembly-CSharp
+        m_MethodName: ShowInterstitialMenuPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789844185737539861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91480,6 +91569,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1789844185737539852}
         m_TargetAssemblyTypeName: 
         m_MethodName: ShowModal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1061399258}
+        m_TargetAssemblyTypeName: ButtonInterstitialController, Assembly-CSharp
+        m_MethodName: ShowInterstitialMenuPlayButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

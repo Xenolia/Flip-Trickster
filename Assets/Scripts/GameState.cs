@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameState
+public class GameState:MonoBehaviour
 {
 	private GameState()
 	{

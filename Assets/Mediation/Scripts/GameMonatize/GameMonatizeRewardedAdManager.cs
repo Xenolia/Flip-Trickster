@@ -151,7 +151,8 @@ public class GameMonatizeRewardedAdManager : IRewardedAdManager
         DOTween.To(() => x, newValue => x = newValue, 1f, 110f).SetUpdate(true).OnComplete(SetTrue);
 
         OnRewardedAdOpened?.Invoke(null);
-        _lastTimeScale = Time.timeScale;
+        AudioListener.volume = 0;
+
         Time.timeScale = 0;
 
         void SetTrue()
@@ -163,6 +164,8 @@ public class GameMonatizeRewardedAdManager : IRewardedAdManager
     private void OnAdClosed()
     {
         Time.timeScale = 1;
+        AudioListener.volume = 1;
+
         OnUserEarnedReward?.Invoke(null, null);
         OnRewardedAdClosed?.Invoke(null);
     }
