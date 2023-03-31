@@ -44,7 +44,7 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
-  defaultScreenWidthWeb: 960
+  defaultScreenWidthWeb: 800
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
@@ -673,11 +673,11 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 1
+  webGLCompressionFormat: 0
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     : EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB
@@ -692,7 +692,7 @@ PlayerSettings:
     PS5: EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE
     Stadia: EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE
     Standalone: GAME_MONOTIZE;EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE
-    WebGL: EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE;GAME_MONOTIZE
+    WebGL: GAME_MONOTIZE
     Windows Store Apps: EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE
     XboxOne: EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE
     iPhone: EASY_MOBILE;EASY_MOBILE_PRO;EM_ADMOB;EM_IRONSOURCE
