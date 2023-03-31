@@ -62,7 +62,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.43922326, g: 0.4875105, b: 0.5677566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &9999993
 LightmapSettings:
@@ -121,7 +121,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 84c574ed8759c4386a8ff2a7e1c52ebc,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 9c159eb004d3cb0488061583b16a2542,
     type: 2}
 --- !u!1001 &344585524
@@ -56679,8 +56680,8 @@ MonoBehaviour:
   - {fileID: 1789844185737538989}
   - {fileID: 1789844185737538875}
   - {fileID: 1789844185737538679}
-  scoreText: {fileID: 1789844185737538972}
-  bestText: {fileID: 1789844185737539039}
+  scoreText: {fileID: 0}
+  bestText: {fileID: 0}
   ch1: 400
   ch2: 1000
   ch3: 2000
@@ -62364,8 +62365,8 @@ MonoBehaviour:
   - {fileID: 1789844185737539054}
   - {fileID: 1789844185737538851}
   - {fileID: 1789844185737538984}
-  scoreText: {fileID: 1789844185737539072}
-  bestText: {fileID: 1789844185737538801}
+  scoreText: {fileID: 0}
+  bestText: {fileID: 0}
   ch1: 1000
   ch2: 1500
   ch3: 2000
@@ -64553,10 +64554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f53ca4d4e1f2889a9c943c2dae4671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1789844185737538922}
+  scoreText: {fileID: 0}
   mplierText: {fileID: 0}
-  totalText: {fileID: 1789844185737538582}
-  flipEx: {fileID: 1789844185737538530}
+  totalText: {fileID: 0}
+  flipEx: {fileID: 0}
 --- !u!114 &1789844185737538923
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -62,7 +62,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4370524, g: 0.48471338, b: 0.56560403, a: 1}
+  m_IndirectSpecularColor: {r: 0.43951437, g: 0.487877, b: 0.56810766, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &9999993
 LightmapSettings:
@@ -121,7 +121,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 1501cf46a24f44b96b71434eb3a344d3,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: cb7421fabcd6bf84cb3bdea9d6b370c5,
     type: 2}
 --- !u!1001 &1141659910
@@ -81820,7 +81821,7 @@ AudioListener:
   m_Enabled: 1
 --- !u!95 &1789844185737538984
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -81837,8 +81838,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!108 &1789844185737538986
 Light:
   m_ObjectHideFlags: 0
@@ -117270,8 +117270,8 @@ MonoBehaviour:
   - {fileID: 1789844185737540845}
   - {fileID: 1789844185737540644}
   - {fileID: 1789844185737540772}
-  scoreText: {fileID: 1789844185737540867}
-  bestText: {fileID: 1789844185737540582}
+  scoreText: {fileID: 0}
+  bestText: {fileID: 0}
   ch1: 1000
   ch2: 1500
   ch3: 2000
@@ -122037,8 +122037,8 @@ MonoBehaviour:
   - {fileID: 1789844185737540698}
   - {fileID: 1789844185737540483}
   - {fileID: 1789844185737540368}
-  scoreText: {fileID: 1789844185737540444}
-  bestText: {fileID: 1789844185737540462}
+  scoreText: {fileID: 0}
+  bestText: {fileID: 0}
   ch1: 400
   ch2: 1000
   ch3: 2000
@@ -123291,10 +123291,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f53ca4d4e1f2889a9c943c2dae4671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1789844185737540851}
+  scoreText: {fileID: 0}
   mplierText: {fileID: 0}
-  totalText: {fileID: 1789844185737540389}
-  flipEx: {fileID: 1789844185737540514}
+  totalText: {fileID: 0}
+  flipEx: {fileID: 0}
 --- !u!114 &1789844185737540852
 MonoBehaviour:
   m_ObjectHideFlags: 0
